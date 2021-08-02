@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2</title>
+    <link rel="stylesheet" type="text/css" href="formu2.css">
+</head>
+<body>
+    <div class="grupo">
+        <h1>Formulário</h1>
+        <p>Preencha os dados abaixo</p>
+    </div>
+
+    <fieldset class="campo">
+        <div class="grupo">
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" id="nome" placeholder="Nome">
+        </div>
+
+        <div class="grupo">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+        </div>
+
+        <div class="grupo">
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade" placeholder="Idade">
+        </div>
+
+        <div class="grupo">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+        </div>
+
+        <div class="grupo">
+            <label>Com o que você trabalha?</label> <br>
+            <input type="checkbox" name="trabalho1" id="trabalho1" value="Programação">
+            <label for="trabalho1">Programação</label>
+            <input type="checkbox" name="trabalho2" id="trabalho2" value="Construção">
+            <label for="trabalho2">Construção</label>
+            <input type="checkbox" name="trabalho3" id="trabalho3" value="Arquitetura">
+            <label for="trabalho3">Arquitetura</label>
+            <input type="checkbox" name="trabalho4" id="trabalho4" value="Engenharia">
+            <label for="trabalho4">Engenharia</label>
+            <input type="checkbox" name="trabalho5" id="trabalho5" value="Design e UX">
+            <label for="trabalho5">Design e UX</label>
+        </div>
+
+        <div class="grupo">
+            <label for="pais">Selecione seu país:</label>
+            <select id="pais">
+                <option selected disabled value>Selecione</option>
+                <option name="opçao">Brasil</option>
+                <option name="opçao">Canadá</option>
+                <option name="opçao">Estados Unidos</option>
+                <option name="opçao">Japão</option>
+                <option name="opçao">Espanha</option>
+                <option name="opçao">México</option>
+                <option name="opçao">França</option>
+                <option name="opçao">Itália</option>
+                <option name="opçao">Outro</option>
+            </select>
+            
+        </div>
+
+        <div class="grupo">
+            <label>Conte-nos um pouco mais sobre você.</label> <br>
+            <textarea row="6" style="width: 20em;" id="voce" name="voce"></textarea>
+        </div>
+    </fieldset>
+    <script href="formu2.js"></script>
+</body>
+</html>
